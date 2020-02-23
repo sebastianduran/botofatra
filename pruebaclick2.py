@@ -5,7 +5,7 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-os.environ["PATH"] += os.pathsep + r'C:\geckodriver-v0.26.0-win64';
+os.environ["PATH"] += os.pathsep + r'~\';
 cap = DesiredCapabilities().FIREFOX
 cap["marionette"] = True
 cap['handleAlerts'] = True
@@ -24,5 +24,3 @@ for i in range(1,3):
     # Get button you are going to click by its id ( also you could us find_element_by_css_selector to get element by css selector)
     #button_element = browser.find_element_by_id('close_entrance_terms')
     #button_element.click()
-    
-    
